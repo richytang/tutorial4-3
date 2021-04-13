@@ -13,7 +13,7 @@ keep_md: yes
 knitr::opts_chunk$set(echo = TRUE, fig.align = "center", fig.path = "Figures/")
 ```
 
-```{r visualizingpenguins, fig.cap = "Relationship between flipper length and body mass", warning = FALSE}
+```{r refgraph, fig.cap = "Relationship between flipper length and body mass", warning = FALSE}
 library(tidyverse)
 library(palmerpenguins)
 library(bookdown)
@@ -23,4 +23,4 @@ y = rnorm(100)
 dat = data.frame(x, y)
 ggplot(dat, aes(x = x, y = y)) + geom_line()
 ```
-The relationship between flipper length and body mass is displayed in  Figure \@ref(fig:visualizingpenguins).
+The relationship between flipper length and body mass is displayed in  Figure \@ref(fig:refgraph).
